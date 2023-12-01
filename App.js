@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import MainPage from './android/app/src/pages/MainPage';
 
 const App = () => {
   return (
-    <View><Text>dasf</Text></View>
+    <View><MainPage/></View>
   )
 };
 
