@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { View, StyleSheet, Text, ScrollView } from 'react-native';
 import Board from '../compponents/MainBoard';
 import Busy from '../compponents/MainBusy';
