@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
   },
   itemText: {
     marginRight: 10,
+    color:'black',
   },
 });
 
