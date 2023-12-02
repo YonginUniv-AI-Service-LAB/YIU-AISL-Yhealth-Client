@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, ScrollView } from 'react-native';
+import { View, StyleSheet, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { boardData } from '../data/BoardData';
 
 const BoardPage = () => {
@@ -33,7 +33,9 @@ const BoardPage = () => {
             </View>
           ))}
         </View>
-        <Text style={styles.text}>글작성</Text>
+        <TouchableOpacity style={styles.addButton}>
+          <Text style={styles.addButtonText}>글작성</Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   )
@@ -90,6 +92,19 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: 'Noto Sans',
     fontWeight: '900',
+  },
+  addButton: {
+    position: 'absolute',
+    top: 800,
+    alignSelf: 'center', // 가운데 정렬
+    backgroundColor: '#007BFF',
+    padding: 10,
+    borderRadius: 5,
+  },
+  addButtonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 })
 
