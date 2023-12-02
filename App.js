@@ -8,7 +8,7 @@ import BoardPage from './android/app/src/pages/BoardPage';
 const App = () => {
   
   return (
-    <View><MainPage/></View>
+    <View><BoardPage/></View>
   )
 };
 
