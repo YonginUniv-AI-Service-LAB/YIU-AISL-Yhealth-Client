@@ -1,23 +1,11 @@
+// Board.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Board = () => {
-  const boardData = [
-    { title: '1', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '2', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '3', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '4', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '5', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '6', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '7', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '8', like: 5, visit: 8, time: '2023.01.01' },
-    { title: '9', like: 5, visit: 8, time: '2023.01.01' },
-  ];
-
-  const limitedBoardData = boardData.slice(-6);// 마지막 6개 데이터 가져오기
+const Board = ({ limitedBoardData }) => {
   return (
     <View style={styles.container}>
-      <View style={{ justifyContent: 'space-between', flexDirection: 'row', }}>
+      <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
         <Text style={styles.title}>게시판</Text>
         <Text style={{ paddingRight: 20, color: '#FF0000', fontSize: 16, fontFamily: 'Noto Sans', fontWeight: '400' }}>
           더보기 {'>'}
@@ -56,7 +44,7 @@ const styles = StyleSheet.create({
   },
   itemText: {
     marginRight: 10,
-    color:'black',
+    color: 'black',
   },
 });
 
